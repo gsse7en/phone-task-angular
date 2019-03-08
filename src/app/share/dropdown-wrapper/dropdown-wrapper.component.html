@@ -1,0 +1,12 @@
+<div class="flex-wrapper">
+  <div class="plus-suffix">+</div>
+  <p-dropdown [options]="countries" [(ngModel)]="selectedCountry" optionLabel="callingCodes" placeholder=" ">
+    <ng-template let-item pTemplate="Country"> 
+      <img [className]="'flag flag-'+item.value.alpha2Code.toLowerCase()" style="vertical-align:middle; margin-right: 10px;">
+      <span style="vertical-align:middle">{{item.value.name}}</span>
+    </ng-template>
+  </p-dropdown>
+  <input class="phone-number" [formControl]="numberControl"/>
+</div>
+
+

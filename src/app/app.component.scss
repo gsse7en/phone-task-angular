@@ -1,0 +1,30 @@
+.flex-wrapper {
+	display: flex;
+	justify-content:flex-start;
+    align-items: stretch;
+    border-radius: 50px;
+}
+
+.pi.pi-bell, .call-label {
+    vertical-align: middle;
+}
+
+.call-button {
+    border: 0;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(140, 215, 90);
+    border-radius: 50px;
+    padding: 4px 10px;
+    font-size: 12px;
+    margin-left: -25px;
+    width: 60px;
+}
+
+.call-button:disabled {
+    background-color: rgb(112, 216, 215) ;
+}
+
+.call-button:focus {
+    outline: 0 !important;
+}
